@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+// make sure to import header file for ArcGIS
+#import "ArcGIS/ArcGIS.h"
+
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet AGSMapView *mapView;
+
+- (IBAction)baseMapChanged:(id)sender;
 
 @end
 
